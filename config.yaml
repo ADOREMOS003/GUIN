@@ -1,2 +1,1 @@
 bids_validator_path: C:/Users/iador/AppData/Roaming/npm/bids-validator.cmd
-api_key: ${ANTHROPIC_API_KEY}

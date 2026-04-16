@@ -87,3 +87,7 @@ GUIN emphasizes reproducibility through:
 - provenance capture in PROV-O JSON-LD.
 
 See `docs/architecture.md` for the system overview.
+
+## Tutorial
+
+- Windows quickstart: `docs/tutorial_windows.md`
