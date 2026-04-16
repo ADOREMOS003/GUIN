@@ -1,0 +1,21 @@
+name: flirt_linear_fsl
+description: 'FSL FLIRT linear registration'
+container: fsl_6.0.7.sif
+cli_template: 'flirt -in {{ input }} -ref {{ ref }} -out {{ out }} -dof {{ dof }}'
+input_schema:
+  input:
+    type: string
+    description: 'Moving image (NIfTI)'
+  ref:
+    type: string
+    description: 'Reference image (NIfTI)'
+  out:
+    type: string
+    description: 'Registered output image'
+  dof:
+    type: integer
+    default: 12
+    description: 'Degrees of freedom (12 for affine)'
+output_bids_suffix: '_flirt'
+modality: structural
+bind_paths: ['input_dir', 'ref_dir', 'output_dir']

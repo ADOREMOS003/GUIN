@@ -1,0 +1,18 @@
+name: skull_strip_fsl
+description: 'Brain extraction using FSL BET'
+container: fsl_6.0.7.sif
+cli_template: 'bet {{ input }} {{ output }} -R -f {{ frac }}'
+input_schema:
+  input:
+    type: string
+    description: 'Input NIfTI file'
+  output:
+    type: string
+    description: 'Output brain-extracted file'
+  frac:
+    type: number
+    default: 0.5
+    description: 'Fractional intensity threshold'
+output_bids_suffix: '_brain'
+modality: structural
+bind_paths: ['input_dir', 'output_dir']

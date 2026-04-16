@@ -1,0 +1,14 @@
+name: fast_segment_fsl
+description: 'FSL FAST tissue segmentation (GM/WM/CSF)'
+container: fsl_6.0.7.sif
+cli_template: 'fast -o {{ output_prefix }} {{ input }}'
+input_schema:
+  input:
+    type: string
+    description: 'Input structural NIfTI (e.g. T1w)'
+  output_prefix:
+    type: string
+    description: 'Output path prefix for tissue class images (no extension)'
+output_bids_suffix: '_fast'
+modality: structural
+bind_paths: ['input_dir', 'output_dir']
