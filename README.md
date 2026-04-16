@@ -1,4 +1,6 @@
-# GUIN
+# GUIN\
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/fb4c076d-96f8-47bb-a5b6-83b252a6bb03" />
+
 GUIN is an MCP-based, provenance-aware neuroimaging workflow platform for BIDS/OpenNeuro datasets.
 
 It combines:
